@@ -1,11 +1,13 @@
 package com.example.Project1;
-
-import org.springframework.aop.scope.ScopedProxyUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Dev {
+    @Autowired
+    private Laptop laptop;
     public void build(){
+        laptop.compile();
         System.out.println("Hello World");
     }
 }
