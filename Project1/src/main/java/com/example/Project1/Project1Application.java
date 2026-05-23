@@ -12,8 +12,10 @@ public class Project1Application{
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(Project1Application.class, args);
-		Dev obj = context.getBean(Dev.class);
-		obj.build();
+//		Dev obj = context.getBean(Dev.class);
+//		obj.build();
+		Car car = context.getBean(Car.class);
+		car.drive();
 
 
 
