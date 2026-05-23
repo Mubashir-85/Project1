@@ -10,6 +10,10 @@ public class Car {
     public Car(Engine engine){
         this.engine = engine;
     }
+    @Autowired
+    public void setEngine(Engine engine){
+        this.engine = engine;
+    }
     public void drive(){
         engine.start();
         System.out.println("Car is Running");
